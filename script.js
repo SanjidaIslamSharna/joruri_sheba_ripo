@@ -32,7 +32,7 @@ document.querySelectorAll(".copy").forEach(btn => {
     alert("Copied: " + number);
 
     copyCount++;
-    copyCounter.textContent = copyCount + (copyCount === 1 ? " Copy" : " Copies");
+    copyCounter.textContent = copyCount;
   });
 });
 
@@ -53,7 +53,6 @@ document.querySelectorAll(".call").forEach(btn => {
 
     const now = new Date().toLocaleTimeString();
 
-    // ✅ Correct template literal
     alert(Calling ${name} at ${number});
 
     const li = document.createElement("li");

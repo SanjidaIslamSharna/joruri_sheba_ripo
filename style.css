@@ -96,7 +96,7 @@ body {
 }
 
 .card-header img {
-  width: 30px;
+  width: 40px; /* increased size for better visibility */
 }
 
 .heart {
@@ -111,7 +111,7 @@ body {
 .badge {
   background: #e0f7fa;
   color: #595b57;
-  padding: 2px 2px;
+  padding: 2px 6px; /* more breathing space */
   border-radius: 6px;
   font-size: 12px;
 }
@@ -131,6 +131,12 @@ body {
   display: flex;
   align-items: center;
   gap: 5px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
 }
 
 .copy {
@@ -170,7 +176,7 @@ body {
 #history-list li {
   margin-bottom: 8px;
   border-bottom: 1px solid #ddd;
-  padding-bottom: 5px;
+  padding: 6px 0; /* better spacing */
 }
 
 /* Responsive */
@@ -178,4 +184,10 @@ body {
   .main-container {
     grid-template-columns: 1fr;
   }
-} 
+  .hero-title {
+    font-size: 22px;
+  }
+  .hero-slogan {
+    font-size: 12px;
+  }
+}
