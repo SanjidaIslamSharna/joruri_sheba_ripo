@@ -56,7 +56,7 @@ document.querySelectorAll(".call").forEach(btn => {
     alert(Calling ${name} at ${number});
 
     const li = document.createElement("li");
-    li.textContent = ${name} - ${number} (${now});
+    li.textContent = ${name} - ${number} (${now}); // ✅ Fixed with backticks
     historyList.appendChild(li);
   });
 });
